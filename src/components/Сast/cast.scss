@@ -1,0 +1,32 @@
+.cast {
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    margin-bottom: 16px;
+    .image {
+      width: 100px;
+      img {
+        width: 100%;
+        height: auto;
+      }
+    }
+    .wrapper {
+      display: flex;
+      flex-direction: column;
+      border: none;
+      gap: 4px;
+      .title {
+        margin: 0;
+        font-size: 14px;
+      }
+      .description {
+        margin: 0;
+        font-size: 12px;
+        span {
+          font-weight: 500;
+        }
+      }
+    }
+  }
+}
