@@ -1,0 +1,2 @@
+.cast__list{display:flex;flex-direction:column;gap:4px;margin-bottom:16px}.cast__list .image{width:100px}.cast__list .image img{height:auto;width:100%}.cast__list .wrapper{border:none;display:flex;flex-direction:column;gap:4px}.cast__list .wrapper .title{font-size:14px;margin:0}.cast__list .wrapper .description{font-size:12px;margin:0}.cast__list .wrapper .description span{font-weight:500}.loader{left:50%;position:absolute;top:50%;-webkit-transform:translate(-50%,-50%);transform:translate(-50%,-50%)}
+/*# sourceMappingURL=659.ddb6df11.chunk.css.map*/
