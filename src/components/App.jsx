@@ -4,7 +4,7 @@ import { Route, Routes } from 'react-router-dom';
 
 const Movies = lazy(() => import('pages/Movies'));
 const MainLayoute = lazy(() => import('layoutes/MainLayoute'));
-const MovieDetails = lazy(() => import('./MovieDetails'));
+const MovieDetails = lazy(() => import('pages/MovieDetails'));
 const Cast = lazy(() => import('./Сast'));
 const Reviews = lazy(() => import('./Reviews'));
 

@@ -12,10 +12,15 @@ const ItemPage = () => {
 
   useEffect(() => {
     const search = searchParam.get('search');
-    if (search) {
-      getMovieList(search);
-      setValue(search);
-    }
+    if (!search) return;
+    const getMovieList = value => {
+      getMovieApi(value).then(data => {
+        setError(false);
+        data.results.length > 0 ? setList(data.results) : setError(true);
+      });
+    };
+    getMovieList(search);
+    setValue(search);
   }, [searchParam]);
 
   const handleChange = ({ target: { value } }) => {
@@ -26,15 +31,6 @@ const ItemPage = () => {
     e.preventDefault();
     const searchValue = e.target.elements.value.value;
     setSearchParam({ search: searchValue });
-    getMovieList(searchValue);
-    //e.target.reset();
-  };
-
-  const getMovieList = value => {
-    getMovieApi(value).then(data => {
-      setError(false);
-      data.results.length > 0 ? setList(data.results) : setError(true);
-    });
   };
 
   return (
